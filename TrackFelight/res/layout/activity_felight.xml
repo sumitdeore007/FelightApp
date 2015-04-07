@@ -22,65 +22,75 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#a0000000"
+        android:padding="2dp"
         android:layout_gravity="start" >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#ff000000"
+            android:background="#c0000000"
+            android:padding="2dp"
             android:orientation="vertical" >
 
             <Button
-                android:id="@+id/smAboutFelight"
+                android:id="@+id/AboutFelight"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="2dp"
                 android:background="@drawable/round_corner_button"
                 android:gravity="center"
                 android:text="About Felight" />
 
             <Button
+                android:id="@+id/CoursesOffered"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="2dp"
                 android:background="@drawable/round_corner_button"
                 android:gravity="center"
-                android:text="Courses offered" />
+                android:text="Courses Offered" />
 
-            <Button
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/round_corner_button"
-                android:gravity="center"
-                android:text="Log In With Google +" />
+                android:layout_height="wrap_content" />
 
             <com.facebook.widget.LoginButton
                 android:id="@+id/logInWithFacebookBTN"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="2dp"
                 android:background="@drawable/round_corner_button"
                 android:gravity="center" />
 
             <Button
-                android:id="@+id/smAboutVinay"
-                android:layout_marginTop="5dp"
+                android:id="@+id/loginfelight"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
                 android:background="@drawable/round_corner_button"
                 android:gravity="center"
-                android:text="About Vinay Noah" />
+                android:text="Log In With Felight" />
 
             <Button
                 android:id="@+id/btMap"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="2dp"
                 android:background="@drawable/round_corner_button"
                 android:gravity="center"
                 android:padding="10dp"
                 android:text="Track Felight" />
+
+            <Button
+                android:id="@+id/btContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/round_corner_button"
+                android:gravity="center"
+                android:text="Contact Us" />
         </LinearLayout>
     </ScrollView>
 
